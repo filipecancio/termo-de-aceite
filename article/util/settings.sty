@@ -1,0 +1,28 @@
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tabularx}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+\fancypagestyle{firststyle}
+{
+    \pagestyle{fancy}
+    \fancyhead{}
+    \renewcommand{\headrulewidth}{.4pt}% Header rule width
+    \renewcommand{\footrulewidth}{0pt}% No footer rule
+    \renewcommand{\headrulewidth}{0pt}% No horizontal bar
+    \fancyhead[C]{% Left header
+        \includegraphics[height=4\baselineskip]{./images/ifba_logo.png}% Image
+        \begin{tabular}{c}
+            TCC - TERMO DE ACEITE PARA \\
+            ORIENTAÇÃO
+        \end{tabular}
+    }
+    \setlength{\headheight}{3.5\baselineskip}% To accommodate new oversized header
+}
